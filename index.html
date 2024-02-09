@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar section starts here -->
+    <div class="home">
+        <div class="navbar-container">
+            <nav id="navbar">
+                <div class="logo-section">
+                    <a href="#"><span class="logo-text">EDUWEB</span></a>
+                </div>
+                <ul class="navlist-section">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">About</a></li>
+                    <li class="nav-link"><a href="#">Services</a></li>
+                    <li class="nav-link"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- the header section starts here -->
+        <div class="intro-section">
+            <div class="remove-black">
+                EDUWEB
+            </div>
+            <svg aria-h idden="true" style="display: none">
+                <filter id="remove-black" color-interpolation-filters="sRGB">
+                    <feColorMatrix type="matrix" values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    -255 -255 -255 0 1" result="black-pixels" />
+                    <feMorphology in="black-pixels" operator="dilate" radius="0.5" result="smoothed" />
+                    <feComposite in="SourceGraphic" in2="smoothed" operator="out" />
+                </filter>
+            </svg>
+            <style>
+                *,
+                *::before,
+                *::after {
+                    box-sizing: border-box;
+                }
+
+                .remove-black {
+                    max-width: 300px;
+                    margin-left: 40%;
+                    background-color: lightblue;
+                    padding: 2rem 3rem;
+                    color: black;
+                    filter: url(#remove-black);
+                    font-size: 2rem;
+                }
+            </style>
+            <h1>learn and get certificates</h1>
+            <button class="intro-section-btn" type="button">Enroll now</button>
+        </div>
+    </div>
+
+    <!-- The about us section starts here  -->
+    <div class="aboutus">
+        <div class="about-section">
+            <div class="about-flex-cont">
+                <img src="card.jpg" alt=" " id="about-img">
+                <div class="about-us-text-section">
+                    <h1 id="aboutus-heading">
+                        Why choose us
+                    </h1>
+                    <div class="about-us-small-section">
+                        <h1><span>
+                                <img src=" " alt="" width="20px" height="20px">
+                                <!-- Add sybmols png or svg in the soource here -->
+                            </span>Trending courses</h1>
+                        <p>Lorem ipsum dolor sitid odit alias modi maxime amet,
+                            quam non ex odio officiis nisi consectetur natus perspiciatis.</p>
+                    </div>
+
+                    <div class="about-us-small-section">
+                        <h1><span>
+                                <img src=" " alt="" width="20px" height="20px">
+                                <!-- Add sybmols png or svg in the soource here -->
+                            </span>Trending courses</h1>
+                        <p>Lorem ipsum dolor sitid odit alias modi maxime amet,
+                            quam non ex odio officiis nisi consectetur natus perspiciatis.</p>
+                    </div>
+
+                    <div class="about-us-small-section">
+                        <h1><span>
+                                <img src=" " alt="" width="20px" height="20px">
+                                <!-- Add sybmols png or svg in the soource here -->
+                            </span>Trending courses</h1>
+                        <p>Lorem ipsum dolor sitid odit alias modi maxime amet,
+                            quam non ex odio officiis nisi consectetur natus perspiciatis.</p>
+                    </div>
+
+                    <div class="about-us-small-section">
+                        <h1><span>
+                                <img src=" " alt="" width="20px" height="20px">
+                                <!-- Add sybmols png or svg in the soource here -->
+                            </span>Trending courses</h1>
+                        <p>Lorem ipsum dolor sitid odit alias modi maxime amet,
+                            quam non ex odio officiis nisi consectetur natus perspiciatis.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- faculty or status section  -->
+            <div class="faculty-info">
+                <div class="teacher">
+                    <h1>60+</h1>
+                    <p>Teachers</p>
+                </div>
+                <div class="students">
+                    <h1>500+</h1>
+                    <p>Students</p>
+                </div>
+                <div class="stories">
+                    <h1>20+</h1>
+                    <p>Stories</p>
+                </div>
+                <div class="courses">
+                    <h1>10+</h1>
+                    <p>Courses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards section   -->
+    <div class="course">
+        <div class="card-container">
+            <h1>Popular Courses</h1>
+            <p>Here are our trending courses which are available for free</p>
+        </div>
+        <div class="cards">
+            <div id="card">
+                <img src="card.jpg" alt="" class="card-img">
+                <h2>React js</h2>
+                <p>This is a javascript framework which is used in frontend</p>
+                <div class="buttons">
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">check syllabus</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="card.jpg" alt="" class="card-img">
+                <h2>React js</h2>
+                <p>This is a javascript framework which is used in frontend</p>
+                <div class="buttons">
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">check syllabus</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="card.jpg" alt="" class="card-img">
+                <h2>React js</h2>
+                <p>This is a javascript framework which is used in frontend</p>
+                <div class="buttons">
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">check syllabus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- contact us and footer starts  -->
+<div class="container">
+    <h1>Contact Us</h1>
+    <form action="index.html" id="contact-form">
+        <input type="text" id="name" required placeholder="Enter your name..">
+        <input type="email" name="email" id="email " required placeholder="Enter Email...">
+        <br>
+        <button type="submit" id="submit-btn">&#9830 Send</button>
+    </form>
+</div>
+
+<!-- footer  -->
+<div class="footer">
+    <p>&#169 EDUWEB 2024 .All rights reserved</p>
+</div>
+</body>
+
+</html>
